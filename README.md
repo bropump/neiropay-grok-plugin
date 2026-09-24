@@ -6,7 +6,9 @@ MCP URL: https://tip.neiropay.app/mcp
 
 Install this plugin through the Grok Bot/Cursor plugin dashboard, then Authenticate. Sign in to NeiroPay with X and approve the displayed application for your account. Authentication belongs to each user. OAuth credentials must remain on the host's protected connector backend, not in agent-readable files.
 
-Tools: account, search_tokens, prepare_tip, send_tip, tip_status.
+Tools: account, search_tokens, prepare_tip, send_tip, tip_status, received_tips, incoming_tips.
+
+Incoming tips are confirmed NeiroPay payments to the authenticated account. `received_tips` provides paginated history; `incoming_tips` provides a resumable polling cursor. A Grok host routine must schedule checks and notifications; connecting alone does not create a notification subscription.
 
 The backend binds the paying account, checks existing eligibility and fees, handles CDP signing and prevents duplicate sends. Token search uses exact Solana mints and requires selection when ambiguous. Disconnect at https://tip.neiropay.app/connect/grok.
 
