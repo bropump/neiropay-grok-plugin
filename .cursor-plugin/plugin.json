@@ -1,0 +1,9 @@
+{
+  "name": "neiropay",
+  "version": "1.0.0",
+  "description": "Tip X accounts with Solana through your connected NeiroPay wallet.",
+  "author": {"name": "NeiroPay"},
+  "homepage": "https://tip.neiropay.app/connect/grok",
+  "mcpServers": "./mcp.json",
+  "skills": "./skills"
+}

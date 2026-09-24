@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "neiropay": {
+      "url": "https://tip.neiropay.app/mcp"
+    }
+  }
+}
